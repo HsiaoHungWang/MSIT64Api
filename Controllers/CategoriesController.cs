@@ -20,6 +20,12 @@ namespace MSIT64Api.Controllers
             _context = context;
         }
 
+        [HttpGet("xyz")]
+        public ActionResult MyAction()
+        {
+            return Ok();
+        }
+
         // GET: api/Categories
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
